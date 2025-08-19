@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Advanced Search</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Top-right nav -->
+    <nav class="top-nav">
+      <a href="index.html">Google Search</a>
+    </nav>
+
+    <main class="advanced-container">
+      <h2 class="advanced-title">Advanced Search</h2>
+
+      <!-- Matches Google's parameter names -->
+      <!-- as_q: all words, as_epq: exact phrase, as_oq: any words, as_eq: none -->
+      <form action="https://www.google.com/search" method="get" class="advanced-form">
+        <div class="adv-row">
+          <label for="all">Find pages with… “all these words:”</label>
+          <input id="all" name="as_q" type="text" />
+        </div>
+
+        <div class="adv-row">
+          <label for="exact">Find pages with… “this exact word or phrase:”</label>
+          <input id="exact" name="as_epq" type="text" />
+        </div>
+
+        <div class="adv-row">
+          <label for="any">Find pages with… “any of these words:”</label>
+          <input id="any" name="as_oq" type="text" />
+        </div>
+
+        <div class="adv-row">
+          <label for="none">Find pages with… “none of these words:”</label>
+          <input id="none" name="as_eq" type="text" />
+        </div>
+
+        <div class="adv-actions">
+          <input type="submit" value="Advanced Search" class="btn btn-advanced" />
+        </div>
+      </form>
+    </main>
+  </body>
+</html>

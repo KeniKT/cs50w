@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Search</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Top-right nav -->
+    <nav class="top-nav">
+      <a href="images.html">Image Search</a>
+      <a href="advanced.html">Advanced Search</a>
+    </nav>
+
+    <!-- Centered container -->
+    <main class="center">
+      <h1 class="logo">Google</h1>
+
+      <form action="https://www.google.com/search" method="get" class="search-form">
+        <div class="search-bar">
+          <input
+            type="text"
+            name="q"
+            aria-label="Search"
+            autofocus
+            required
+            class="search-input"
+          />
+        </div>
+
+        <div class="btn-row">
+          <input type="submit" value="Google Search" class="btn" />
+          <!-- Lucky: send btnI to trigger direct top result -->
+          <button
+            type="submit"
+            name="btnI"
+            value="I'm Feeling Lucky"
+            class="btn"
+            formaction="https://www.google.com/search"
+            formmethod="get"
+          >
+            I’m Feeling Lucky
+          </button>
+        </div>
+      </form>
+    </main>
+  </body>
+</html>
